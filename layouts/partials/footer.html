@@ -1,0 +1,31 @@
+</main>
+<footer class="footer">
+    <div>
+        <h2>DecaHex - 2022</h2>
+    </div>
+    <div>
+        <p id="randquote"></p>
+    </div>
+    <div>
+        <p>v0.0</p>
+    </div>
+</footer>
+</body>
+<script src="/quotes.js"></script>
+<script>
+
+
+    window.onload = () => {
+        genQuote();
+    }
+
+    function genQuote() {
+        const peetag = document.querySelector("#randquote")
+        const quote = quotesArray[Math.floor(Math.random() * Math.floor(4))]
+        peetag.innerHTML = "\x22" + quote + "\x22" 
+
+
+    }
+</script>
+
+</html>

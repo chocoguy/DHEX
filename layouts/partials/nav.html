@@ -1,0 +1,7 @@
+<nav class="nav">
+    <a href="/index.html"><img id="logo-switch" src="/decahexlight.png"></a>
+	{{- $sec := .Page.Section }}{{ $file := .File.TranslationBaseName -}}
+        {{ range.Site.Menus.main.ByWeight }}{{ $base := path.Base .URL }}
+	        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{- end }}
+</nav>
